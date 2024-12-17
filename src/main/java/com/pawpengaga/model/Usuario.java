@@ -1,5 +1,6 @@
 package com.pawpengaga.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,6 +21,8 @@ public class Usuario {
   private Long id;
   private String nombre;
   private String clave;
+
+  @Column(unique = true)
   private String correo;
 
 }
