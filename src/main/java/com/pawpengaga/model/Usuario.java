@@ -25,4 +25,7 @@ public class Usuario {
   @Column(unique = true)
   private String correo;
 
+  @Column(unique = true)
+  private String rut;
+
 }

@@ -1,5 +1,7 @@
 package com.pawpengaga.model;
 
+import com.pawpengaga.annotation.ValidarRut;
+
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
@@ -20,11 +22,16 @@ public class UsuarioRequest {
   @NotBlank(message = "La contraseña no puede estar vacia")
   // Hacer una anotación personalizada con el método de cálculo del dígito verificador
   @Size(min = 6, max = 20, message = "La contraseña debe tener entre 6 y 20 caracteres")
-  @Pattern(regexp = "^(\\d{1,3}(?:\\.\\d{1,3}){2}-[\\dkK])$", message = "La contraseña debe estar formateada como un RUT Chileno... CAMBIAR LUEGO")
+  @Pattern(regexp = "^.{8,20}$", message = "La contraseña debe tener entre 8 y 20 caracteres")
   private String clave; // Si quisieramos hacer validaciones en base a una expresión regular se debería hacer en una clase a parte...
   
   @NotBlank(message = "El correo no puede estar vacio...")
   @Email(message = "El correo debe ser válido")
   private String correo;
+
+  @NotBlank(message = "El RUT no puede estar vacío")
+  @ValidarRut
+  @Pattern(regexp = "^(\\d{1,3}(?:\\.\\d{1,3}){2}-[\\dkK])$", message = "El RUT no tiene el formato adecuado")
+  private String rut;
 
 }

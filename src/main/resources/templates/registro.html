@@ -31,6 +31,11 @@
           <p th:if="${#fields.hasErrors('correo')}" th:errors="*{correo}"></p>
         </div>
         <div>
+          <label for="rut" class="form-label">RUT</label>
+          <input type="text" th:field="*{rut}" id="rut" class="form-control" placeholder="Escriba el rut de la manera habitual" />
+          <p th:if="${#fields.hasErrors('rut')}" th:errors="*{rut}"></p>
+        </div>
+        <div>
           <label for="clave" class="form-label">Clave</label>
           <input type="password" th:field="*{clave}" id="clave" class="form-control" />
           <p th:if="${#fields.hasErrors('clave')}" th:errors="*{clave}"></p>
