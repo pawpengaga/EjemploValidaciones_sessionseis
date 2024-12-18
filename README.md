@@ -13,7 +13,7 @@ Prueba de validaciones
 - Si quisieramos hacer validaciones en base a una expresión regular se debería hacer en una clase a parte...
 
 ## Pendientes
-- Hacer una **anotación personalizada** con el método de cálculo del `dígito verificador`
+- Hacer una **anotación personalizada** con el método de cálculo del `dígito verificador` `<- ¡COMPLETADO!`
 - Cambiar la validación de una contraseña por una realmente útil
 
 ## Anotaciones de validaciones Java
