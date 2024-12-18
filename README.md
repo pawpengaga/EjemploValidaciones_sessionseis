@@ -2,6 +2,12 @@
 
 Prueba de validaciones
 
+## Novedades
+
+¡NUEVA ANOTACIÓN DE VALIDACIÓN PERSONALIZADA!
+
+`@ValidarRut` ahora está disponible para su uso, valida el *dígito verificador* del RUT Chileno
+
 ## Investigar
 
 - Si quisieramos hacer validaciones en base a una expresión regular se debería hacer en una clase a parte...
