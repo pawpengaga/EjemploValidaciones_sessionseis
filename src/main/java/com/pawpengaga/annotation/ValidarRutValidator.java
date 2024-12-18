@@ -17,6 +17,7 @@ public class ValidarRutValidator implements ConstraintValidator<ValidarRut, Stri
 
   private boolean calculoDigitoVerificadorClases(String value){
         /* ************ METODO ESCRITO EN CLASES POR EL PROFESOR ************ */
+        // Revisar, por alguna razón rompe la app
 
         String[] run = value.split("-");
 

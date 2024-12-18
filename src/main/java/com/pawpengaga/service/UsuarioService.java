@@ -24,6 +24,7 @@ public class UsuarioService {
     user.setNombre(request.getNombre());
     user.setClave(request.getClave());
     user.setCorreo(request.getCorreo());
+    user.setRut(request.getRut());
 
     return userRepo.save(user);
 
